@@ -10,17 +10,70 @@
       integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Bootstrap Theme</title>
   </head>
   <body>
     <!-- START HERE -->
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          <img src="img/mlogo.png" width="50" height="50" alt="" />
+          <h3 class="d-inline align-middle">Mizuxe</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#authors" class="nav-link">Meet the Authors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SHOWCASE -->
+    <section id="showcase" class="py-5">
+      <div class="primary-overlay text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center">
+              <h1 class="display-2 mt-5 pt-5">Do What You Dream Of...</h1>
+              <p class="lead">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita, optio.
+              </p>
+              <a href="" class="btn btn-outline-secondary btn-lg text-white"
+                ><i class="fas fa-arrow-right"></i> Read More</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="img/book.png"
+                alt=""
+                class="img-fluid d-none d-lg-block"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
