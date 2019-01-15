@@ -1,25 +1,28 @@
-.btn,
+/* .btn,
 .btn:focus {
   border: 0px;
-}
+} */
+a {
+  transition: 0.5s;
+  color: #336699; }
+  a:link {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  opacity: 0;
-  background-color: #000;
-  transition: 0.5s ease;
-}
+.card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .card:hover {
+    opacity: 0.5; }
 
-.container:hover .overlay {
-  opacity: 0.4;
-}
+.parent:hover {
+  background: green; }
 
-#logo:hover {
-  opacity: 0.6;
-  transition: 0.5s ease;
-}
+#logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }

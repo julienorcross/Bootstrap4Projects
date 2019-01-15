@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      id="main-nav"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand" id="logo"
+          ><img src="img/logo.svg" alt="logo" width="30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item"><a href="#info" class="nav-link">Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARDS -->
+    <section id="projects" class="m-5 text-center">
+      <div class="container pt-5">
+        <div class="row ">
+          <div class="col-lg-4 col-md-6">
+            <a href="LoopLAB/index.html">
+              <div class="card">
+                <div class="card-img-top">
+                  <img src="img/looplab.jpg" alt="" class="img-fluid mb-3" />
+                </div>
+                <div class="card-body"><h1>LoopLab</h1></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <footer id="info" class="footer bg-dark text-light ">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Info</h1>
+            <p>
+              These projects come from
+              <a
+                href="https://www.udemy.com/bootstrap-4-from-scratch-with-5-projects/"
+                >Brad Traversy's Bootstrap 4 Course</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+
+      // init scrollspy
+      $('body').scrollspy({ target: '#main-nav' });
+
+      $('#main-nav a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

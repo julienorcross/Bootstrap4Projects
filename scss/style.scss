@@ -1,0 +1,44 @@
+/* .btn,
+.btn:focus {
+  border: 0px;
+} */
+
+a {
+  transition: 0.5s;
+  color: #336699;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.parent {
+  &:hover {
+    background: green;
+  }
+}
+
+#logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}

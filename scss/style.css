@@ -1,0 +1,38 @@
+/* .btn,
+.btn:focus {
+  border: 0px;
+} */
+a {
+  color: #fabbbb;
+  transition: 0.5s; }
+  a :link {
+    text-decoration: none; }
+  a :visited {
+    text-decoration: none; }
+  a :hover {
+    text-decoration: none;
+    color: #000; }
+  a :active {
+    text-decoration: none; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  background-color: #000; }
+
+.card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .card :hover {
+    opacity: 0.5; }
+
+#logo {
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+/*# sourceMappingURL=style.css.map */
