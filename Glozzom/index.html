@@ -16,6 +16,10 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Bootstrap Theme</title>
   </head>
@@ -184,6 +188,178 @@
       </div>
     </section>
 
+    <!-- VIDEO PLAY -->
+    <section id="video-play">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container p-5">
+              <a
+                href="#"
+                class="video"
+                data-video="https://www.youtube.com/embed/UxXSHDdlh_E"
+                data-toggle="modal"
+                data-target="#videoModal"
+              >
+                <i class="fas fa-play fa-3x"></i>
+              </a>
+              <h1>See What We Do</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="videoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <iframe
+              src=""
+              frameborder="0"
+              height="350"
+              width="100%"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center">Check out our photos</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/560x560"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/560x560"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/561x561"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="561"
+              data-width="561"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/561x561"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/562x562"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="562"
+              data-width="562"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/562x562"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/563x563"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="563"
+              data-width="563"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/563x563"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/564x564"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="564"
+              data-width="564"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/564x564"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/565x565"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="565"
+              data-width="565"
+              ><img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/565x565"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sign Up for Our newsletter</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae facere enim dicta necessitatibus illum, tenetur sequi
+              reiciendis recusandae neque voluptas.
+            </p>
+            <form class="form-inline justify-content-center">
+              <input
+                type="text"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Name"
+              />
+              <input
+                type="email"
+                class="form-control mb-2 mr-2"
+                placeholder="Enter Email"
+              />
+              <button class="btn btn-primary mb-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -199,14 +375,37 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script>
       // Get the current year for the copyright
-      $('#year').text(new.Date().getFullYear());
+      $('#year').text(new Date().getFullYear());
 
       // Configure Slider
       $('.carousel').carousel({
         interval: 6000,
         pause: 'hover'
+      });
+
+      // Lightbox Init
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+      // Video Play
+      $(function() {
+        // Auto play modal video
+        $('.video').click(function() {
+          var theModal = $(this).data('target'),
+            videoSRC = $(this).attr('data-video'),
+            videoSRCauto =
+              videoSRC +
+              '?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1';
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function() {
+            $(theModal + ' iframe').attr('src', videoSRC);
+          });
+        });
       });
     </script>
   </body>
