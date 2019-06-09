@@ -1,0 +1,11 @@
+- fun title font from google fonts (add a black dropshadow too maybe?)
+- kebab case 
+x fix outline on focus on input and plus button and modal buttons
+- make delete icons (use font awesome or something else) maybe inside a circle or something
+x lighter text on placeholders for inputs
+x plus button hover is too dark
+x javascript logic to prevent adding an empty item 
+x cancel hover background should be lighter
+- slightly less and more consistent vertical spacing above the table (table is good)
+x modal button text is way smaller - should be bigger
+x more space between modal buttons when hovering on cancel 

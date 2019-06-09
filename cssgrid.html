@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        background: green;
+        align-items: stretch;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        border: 1px solid #000;
+        width: 100px;
+        flex-grow: 0;
+        background: #ccc;
+      }
+
+      .item:nth-child(2) {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">
+        Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        incidunt voluptatibus cumque nesciunt voluptatum, debitis repudiandae
+        veritatis nulla laborum ducimus laboriosam nisi, saepe necessitatibus
+        velit aliquam similique vitae, fugit mollitia recusandae reiciendis
+        autem optio. Quo, qui? Voluptas quas fuga tempore qui minima dolorem
+        quasi cupiditate consectetur, veniam sunt laudantium accusantium ea.
+        Labore dicta veniam dolorem eius vero expedita maiores veritatis id
+        nobis, cum harum numquam necessitatibus ratione odit tempora consequatur
+        optio quod ipsa totam ad voluptate unde? Sint, id maiores eveniet velit
+        autem ut accusantium adipisci. Tempora, aperiam quasi, esse cupiditate
+        maiores quae enim inventore blanditiis maxime distinctio sunt minus.
+      </div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">
+        Item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam
+        et minima autem totam sunt ea voluptate illo, eaque voluptas, quasi,
+        esse id error! Qui, distinctio mollitia quidem nesciunt quaerat totam
+        quae a molestiae rerum dolor numquam, iure expedita illo ratione
+        delectus dolores neque, quod consequatur ipsum in veritatis velit libero
+        voluptates? Optio, tempora ullam? Esse officiis iure ea est maxime ab
+        quis molestias culpa ex dolorem, obcaecati magnam cumque quod
+        reprehenderit quas totam numquam molestiae fuga porro necessitatibus cum
+        vero, et fugit! Nisi saepe, provident quasi id ut libero dolore
+        repellendus, corporis tempora in similique quaerat consequatur maiores
+        deleniti?
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jdn3xgu.css" />
+    <title>Item Lister</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="contentContainer">
+        <h1 id="headerTitle">Item Lister</h1>
+      </div>
+    </header>
+
+    <!-- TOOLBAR -->
+    <div class="contentContainer">
+      <section id="toolbar-section">
+        <div class="toolbar">
+          <form id="addForm">
+            <div class="addItem">
+              <div class="textInput">
+                <input type="text" id="addItem" placeholder="Add item" />
+              </div>
+              <div class="submit">
+                <input type="submit" class="addBtn" value="+" />
+              </div>
+            </div>
+          </form>
+          <div class="searchBar">
+            <input type="text" id="filter" placeholder="Search" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ITEM LIST -->
+    <div class="contentContainer">
+      <section id="toDo-section">
+        <h2>TO DO</h2>
+        <ul id="list">
+          <li class="item">
+            Go to post office
+            <span class="deleteBtn delete">&times;</span>
+          </li>
+          <li class="item">
+            Pick up cake
+            <span class="deleteBtn delete">&times;</span>
+          </li>
+          <li class="item">
+            Pet that dog down the street
+            <span class="deleteBtn delete">&times;</span>
+          </li>
+          <li class="item">
+            Take a nap
+            <span class="deleteBtn delete">&times;</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="simpleModal" class="modal">
+      <div class="modalContent">
+        <div class="modalHeader">
+          <span class="closeBtn">&times;</span>
+          <h2>Delete Task</h2>
+          <p>Are you sure you want to delete this task?</p>
+        </div>
+        <div class="modalBody">
+          <button id="denyDelete" class="button delete">Cancel</button>
+          <button id="confirmDelete" class="button">Yes, delete</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
